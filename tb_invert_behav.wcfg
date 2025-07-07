@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_invert_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_invert" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="7,935.416 ns"></ZoomStartTime>
+      <ZoomEndTime time="8,534.917 ns"></ZoomEndTime>
+      <Cursor1Time time="8,435.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="189"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject type="logic" fp_name="/tb_invert/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_invert/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_invert/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/a">
+      <obj_property name="ElementShortName">a[255:0]</obj_property>
+      <obj_property name="ObjectShortName">a[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_invert/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/a_inv">
+      <obj_property name="ElementShortName">a_inv[255:0]</obj_property>
+      <obj_property name="ObjectShortName">a_inv[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/WID">
+      <obj_property name="ElementShortName">WID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WID[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_invert/uut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_invert/uut/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_invert/uut/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/a">
+      <obj_property name="ElementShortName">a[255:0]</obj_property>
+      <obj_property name="ObjectShortName">a[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/result">
+      <obj_property name="ElementShortName">result[255:0]</obj_property>
+      <obj_property name="ObjectShortName">result[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_invert/uut/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/state">
+      <obj_property name="ElementShortName">state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/counter">
+      <obj_property name="ElementShortName">counter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/next_state">
+      <obj_property name="ElementShortName">next_state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/op_a">
+      <obj_property name="ElementShortName">op_a[255:0]</obj_property>
+      <obj_property name="ObjectShortName">op_a[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/op_b">
+      <obj_property name="ElementShortName">op_b[255:0]</obj_property>
+      <obj_property name="ObjectShortName">op_b[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_invert/uut/mul_start">
+      <obj_property name="ElementShortName">mul_start</obj_property>
+      <obj_property name="ObjectShortName">mul_start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/mul_result">
+      <obj_property name="ElementShortName">mul_result[255:0]</obj_property>
+      <obj_property name="ObjectShortName">mul_result[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_invert/uut/mul_done">
+      <obj_property name="ElementShortName">mul_done</obj_property>
+      <obj_property name="ObjectShortName">mul_done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a2">
+      <obj_property name="ElementShortName">r_a2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a2[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a4">
+      <obj_property name="ElementShortName">r_a4[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a4[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a8">
+      <obj_property name="ElementShortName">r_a8[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a8[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a9">
+      <obj_property name="ElementShortName">r_a9[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a9[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a11">
+      <obj_property name="ElementShortName">r_a11[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a11[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a22">
+      <obj_property name="ElementShortName">r_a22[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a22[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a2_5_1">
+      <obj_property name="ElementShortName">r_a2_5_1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a2_5_1[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a2_10_1">
+      <obj_property name="ElementShortName">r_a2_10_1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a2_10_1[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a2_20_1">
+      <obj_property name="ElementShortName">r_a2_20_1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a2_20_1[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a2_50_1">
+      <obj_property name="ElementShortName">r_a2_50_1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a2_50_1[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a2_100_1">
+      <obj_property name="ElementShortName">r_a2_100_1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a2_100_1[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a2_250_1">
+      <obj_property name="ElementShortName">r_a2_250_1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a2_250_1[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_a2_11">
+      <obj_property name="ElementShortName">r_a2_11[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_a2_11[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/r_t">
+      <obj_property name="ElementShortName">r_t[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r_t[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_invert/uut/result_reg">
+      <obj_property name="ElementShortName">result_reg[255:0]</obj_property>
+      <obj_property name="ObjectShortName">result_reg[255:0]</obj_property>
+   </wvobject>
+</wave_config>

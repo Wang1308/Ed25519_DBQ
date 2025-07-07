@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Interleaved_Modular_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_Interleaved_Modular" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="992.666 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,067.467 ns"></ZoomEndTime>
+      <Cursor1Time time="1,055.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="247"></NameColumnWidth>
+      <ValueColumnWidth column_width="637"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject type="logic" fp_name="/tb_Interleaved_Modular/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Interleaved_Modular/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Interleaved_Modular/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/X">
+      <obj_property name="ElementShortName">X[255:0]</obj_property>
+      <obj_property name="ObjectShortName">X[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/Y">
+      <obj_property name="ElementShortName">Y[255:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/Z">
+      <obj_property name="ElementShortName">Z[255:0]</obj_property>
+      <obj_property name="ObjectShortName">Z[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/counter">
+      <obj_property name="ElementShortName">counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_Interleaved_Modular/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/ramY/addr">
+      <obj_property name="ElementShortName">addr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/ramY/data_out">
+      <obj_property name="ElementShortName">data_out[255:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/rom2/sel">
+      <obj_property name="ElementShortName">sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/rom2/data">
+      <obj_property name="ElementShortName">data[255:0]</obj_property>
+      <obj_property name="ObjectShortName">data[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_shift_c/in">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in[259:0]</obj_property>
+      <obj_property name="ObjectShortName">in[259:0]</obj_property>
+      <obj_property name="label">in_Shift_C[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_shift_c/out">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">out[259:0]</obj_property>
+      <obj_property name="ObjectShortName">out[259:0]</obj_property>
+      <obj_property name="label">out_Shift_C[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_shift_s/in">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in[259:0]</obj_property>
+      <obj_property name="ObjectShortName">in[259:0]</obj_property>
+      <obj_property name="label">in_Shift_S[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_shift_s/out">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">out[259:0]</obj_property>
+      <obj_property name="ObjectShortName">out[259:0]</obj_property>
+      <obj_property name="label">out_Shift_S[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_csa1/in1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in1[259:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[259:0]</obj_property>
+      <obj_property name="label">in1_CSA1[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_csa1/in2">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in2[259:0]</obj_property>
+      <obj_property name="ObjectShortName">in2[259:0]</obj_property>
+      <obj_property name="label">in2_CSA1[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_csa1/in3">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in3[259:0]</obj_property>
+      <obj_property name="ObjectShortName">in3[259:0]</obj_property>
+      <obj_property name="label">in3_CSA1[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_csa1/sum">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sum[259:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[259:0]</obj_property>
+      <obj_property name="label">sum_CSA1[255:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_csa1/carry">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">carry[259:0]</obj_property>
+      <obj_property name="ObjectShortName">carry[259:0]</obj_property>
+      <obj_property name="label">carry_CSA1[255:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_csa2/in1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in1[259:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[259:0]</obj_property>
+      <obj_property name="label">in1_CSA2[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_csa2/in2">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in2[259:0]</obj_property>
+      <obj_property name="ObjectShortName">in2[259:0]</obj_property>
+      <obj_property name="label">in2_CSA2[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_csa2/in3">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in3[259:0]</obj_property>
+      <obj_property name="ObjectShortName">in3[259:0]</obj_property>
+      <obj_property name="label">in3_CSA2[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_csa2/sum">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">sum[259:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[259:0]</obj_property>
+      <obj_property name="label">sum_CSA2[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/u_csa2/carry">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">carry[259:0]</obj_property>
+      <obj_property name="ObjectShortName">carry[259:0]</obj_property>
+      <obj_property name="label">carry_CSA2[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/regC/din">
+      <obj_property name="ElementShortName">din[259:0]</obj_property>
+      <obj_property name="ObjectShortName">din[259:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/regC/dout">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[259:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[259:0]</obj_property>
+      <obj_property name="label">doutC[259:0]</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/regS/din">
+      <obj_property name="ElementShortName">din[259:0]</obj_property>
+      <obj_property name="ObjectShortName">din[259:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_Interleaved_Modular/uut/regS/dout">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[259:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[259:0]</obj_property>
+      <obj_property name="label">doutS[259:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

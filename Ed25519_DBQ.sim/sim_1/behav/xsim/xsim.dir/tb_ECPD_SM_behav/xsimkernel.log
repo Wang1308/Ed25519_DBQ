@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_ECPD_SM_behav/xsimk -simmode gui -wdb tb_ECPD_SM_behav.wdb -simrunnum 0 -socket 50355
+Design successfully loaded
+Design Loading Memory Usage: 23492 KB (Peak: 24068 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 107284 KB (Peak: 162760 KB)
+Simulation CPU Usage: 5630 ms
