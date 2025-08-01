@@ -9,7 +9,7 @@ module RAM_Y_GEN_tb();
     wire [255:0] data_out;
 
     // Instantiate the module under test
-    RAM_Y_GEN uut (
+    ramY_2 uut (
         .clk(clk),
         .rst(rst),
         .Y(Y),
@@ -60,7 +60,7 @@ module RAM_Y_GEN_tb();
         init_en = 0;
 
         // Wait enough cycles for computation (8 cycles + margin)
-        #100;
+        #600;
 
         // Compare results
         for (i = 0; i < 8; i = i + 1) begin

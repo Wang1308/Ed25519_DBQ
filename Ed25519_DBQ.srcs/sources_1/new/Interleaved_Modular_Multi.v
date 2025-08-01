@@ -104,18 +104,30 @@ module Interleaved_Modular_Multi #( parameter WIDTH = 256)(
     assign csa2_in3 = is_idle_or_init ? {WID{1'b0}} : rom_data;  // zero extend rom_data lên WID bit
     
     wire [WID-1:0] Z_tmp = C_reg_out + S_reg_out;
+
+//    wire [WID-1:0] Z_raw_low = Z_raw;
+//    wire Z_ge_P = (Z_raw_low >= P);
+
+//    wire [255:0] Z_mod_p = Z_ge_P ? (Z_raw_low - {4'b0, P}) : Z_raw_low;
+    
     wire [WID-1:0] regC_in = clear_regs ? {WID{1'b0}} : csa2_carry;
     wire [WID-1:0] regS_in = clear_regs ? {WID{1'b0}} : csa2_sum;
 
     wire [254:0] mod_p_result;
+    reg start_mod;
+    wire done_mod;
     
-    mod_p u_mod_p (
+    mod_p_ed25519_seq u_mod_p (
+    .clk(clk),
+    .rst(reset),
+    .start(start_mod),
+    .done(done_mod),
     .X({252'b0, Z_tmp}),      // Zero-extend Z_tmp to 512 bits (260 -> 512)
-    .result(mod_p_result)
+    .Z(mod_p_result)
     );
 
     
-    RAM_Y_GEN ramY (
+    ramY_2 ramY (
         .clk(clk),
         .rst(reset),
         .Y(Y),
@@ -185,6 +197,7 @@ module Interleaved_Modular_Multi #( parameter WIDTH = 256)(
             counter  <= NUM_DIGITS;
             counter_ram <= 0;
             done     <= 0;
+            start_mod <= 0;
             Z        <= 0;
         end else begin
             case (state)
@@ -200,7 +213,7 @@ module Interleaved_Modular_Multi #( parameter WIDTH = 256)(
                 INIT_RAM: begin
                     counter_ram <= counter_ram +1;
                     counter <= NUM_DIGITS;
-                    if (counter_ram > 14) begin 
+                    if (counter_ram > 46) begin 
                     state <= PROCESSING;
                     end
                 end
@@ -209,15 +222,19 @@ module Interleaved_Modular_Multi #( parameter WIDTH = 256)(
                     counter <= counter - 1;
                 end else begin
                     state <= FINALIZE;
+                    start_mod <= 1;
                 end
             end
 
             FINALIZE: begin
-                Z <= {1'b0, mod_p_result};
+            if (done_mod == 1) begin
+                Z <= {1'b0, mod_p_result};                                         
                 state <= DONE;
+               end
             end
 
             DONE: begin
+                start_mod <= 0;
                 done  <= 1;
                 state <= IDLE;
             end

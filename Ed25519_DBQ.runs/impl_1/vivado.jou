@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Aug  1 11:28:35 2025
+# Process ID: 14830
+# Current directory: /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.runs/impl_1
+# Command line: vivado -log point_multi_core.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source point_multi_core.tcl -notrace
+# Log file: /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.runs/impl_1/point_multi_core.vdi
+# Journal file: /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.runs/impl_1/vivado.jou
+# Running On: bowang1308-Precision-M4800, OS: Linux, CPU Frequency: 3107.397 MHz, CPU Physical cores: 4, Host memory: 8226 MB
+#-----------------------------------------------------------
+source point_multi_core.tcl -notrace

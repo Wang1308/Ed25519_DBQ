@@ -63,7 +63,7 @@ module tb_ALU_UNIT;
         $display("QX: %h", qx);
         $display("QY: %h", qy);
         $display("QZ: %h", qz);
-        $display("QZ: %h", qt);
+        $display("QT: %h", qt);
     end
     endtask
 

@@ -103,7 +103,7 @@ module point_multi_core #(
         .done(alu_done)
     );
     
-    Interleaved_Modular_Multi #(WID) multi_unit (
+    Interleaved_Modular_Multi multi_unit (
         .clk(clk),
         .reset(rst_mul),
         .start(start_mul),
@@ -131,7 +131,10 @@ module point_multi_core #(
                     if (start) state <= CALC_P;
                 
                 CALC_P: begin
-                    if (mul_done) state <= CALC_Q;
+                    if (mul_done) begin
+                    state <= CALC_Q;
+                    pt <= Z;
+                    end
                  end  
                  
                 CALC_Q: begin
@@ -201,7 +204,7 @@ module point_multi_core #(
                 end
                 CALC_Q: begin
                     start_SMSM <= 1;
-                    pt <= Z;
+//                    pt <= Z;
                 end
                 INV_Z: begin
                     start_inv <= 1;

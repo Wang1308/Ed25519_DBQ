@@ -32,7 +32,7 @@ module tb_Interleaved_Modular();
     wire done;
 
     // DUT
-    Interleaved_Modular_Multi #(N) uut (
+    Interleaved_Modular_Multi uut (
         .clk(clk),
         .reset(reset),
         .start(start),
@@ -48,7 +48,10 @@ module tb_Interleaved_Modular();
     initial begin
         // === Vector kiểm thử: bạn có thể đổi để khớp với Python ===
         X = 256'h7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEC;
-        Y = 256'h7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEB;
+        Y = 256'hFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEC;
+        
+//        X = 256'he01;
+//        Y = 256'he05;
 
         // === Reset ===
         reset = 1; #10;

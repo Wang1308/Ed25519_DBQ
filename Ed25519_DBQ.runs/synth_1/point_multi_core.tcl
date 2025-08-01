@@ -84,6 +84,7 @@ set_property ip_output_repo /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.c
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
+read_verilog -library xil_defaultlib -sv /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/mod_p_seq.sv
 read_verilog -library xil_defaultlib {
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/ALU_UNIT.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/CPA.v
@@ -92,16 +93,15 @@ read_verilog -library xil_defaultlib {
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/ECPA_SM.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/ECPD_SM.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Interleaved_Modular_Multi.v
-  /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/RAM_Y_GEN.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/REG.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/ROM.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Scalar_multi_SM.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Shift_mod.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/alu.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/invert.v
-  /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/mod_p.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/modular_adder.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/modular_sub.v
+  /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/ramY_2.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/regbank.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/point_multi_core.v
 }

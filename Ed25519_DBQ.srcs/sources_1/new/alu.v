@@ -57,7 +57,7 @@ module alu #(
     wire               done_mul;
     wire [WID-1:0]     result_mul;
 
-    Interleaved_Modular_Multi #(.WIDTH(WID)) mod_mul (
+    Interleaved_Modular_Multi mod_mul (
         .clk(clk),
         .reset(rst),
         .start(start_mul),
