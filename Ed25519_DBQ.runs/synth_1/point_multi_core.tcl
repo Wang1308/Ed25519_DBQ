@@ -71,7 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7a100tcsg324-2L
+create_project -in_memory -part xc7z020clg400-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -93,7 +93,6 @@ read_verilog -library xil_defaultlib {
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/ECPA_SM.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/ECPD_SM.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Interleaved_Modular_Multi.v
-  /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/REG.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/ROM.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Scalar_multi_SM.v
   /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Shift_mod.v
@@ -120,7 +119,7 @@ read_checkpoint -auto_incremental -incremental /home/bowang1308/Documents/Ed2551
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top point_multi_core -part xc7a100tcsg324-2L
+synth_design -top point_multi_core -part xc7z020clg400-2
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

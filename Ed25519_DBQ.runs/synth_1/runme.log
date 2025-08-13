@@ -11,20 +11,20 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source point_multi_core.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2071.070 ; gain = 122.992 ; free physical = 3818 ; free virtual = 19018
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2071.074 ; gain = 123.992 ; free physical = 248 ; free virtual = 17461
 Command: read_checkpoint -auto_incremental -incremental /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/utils_1/imports/synth_1/point_multi_core.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from /home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/utils_1/imports/synth_1/point_multi_core.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top point_multi_core -part xc7a100tcsg324-2L
+Command: synth_design -top point_multi_core -part xc7z020clg400-2
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Vivado_Tcl 4-1810] synth_design options have changed between reference and incremental; A full resynthesis will be run
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14404
+INFO: [Synth 8-7075] Helper process launched with PID 20160
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2486.527 ; gain = 382.738 ; free physical = 3162 ; free virtual = 18362
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2486.531 ; gain = 382.738 ; free physical = 191 ; free virtual = 16840
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'point_multi_core' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/point_multi_core.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Scalar_multi_SM' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Scalar_multi_SM.v:3]
@@ -48,11 +48,9 @@ INFO: [Synth 8-6157] synthesizing module 'modular_adder' [/home/bowang1308/Docum
 INFO: [Synth 8-6157] synthesizing module 'CSA' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/CSA.v:23]
 	Parameter WIDTH bound to: 256 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'CSA' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/CSA.v:23]
-WARNING: [Synth 8-689] width (257) of port connection 'carry' does not match port width (256) of module 'CSA' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/modular_adder.v:35]
 INFO: [Synth 8-6157] synthesizing module 'CPA' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/CPA.v:23]
 	Parameter WIDTH bound to: 256 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'CPA' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/CPA.v:23]
-WARNING: [Synth 8-689] width (257) of port connection 'carry_in' does not match port width (256) of module 'CPA' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/modular_adder.v:44]
 INFO: [Synth 8-6155] done synthesizing module 'modular_adder' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/modular_adder.v:11]
 INFO: [Synth 8-6157] synthesizing module 'modular_sub' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/modular_sub.v:23]
 	Parameter WIDTH bound to: 256 - type: integer 
@@ -60,9 +58,9 @@ INFO: [Synth 8-6157] synthesizing module 'CPA_sub' [/home/bowang1308/Documents/E
 	Parameter WIDTH bound to: 256 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'CPA_sub' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/CPA_sub.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'modular_sub' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/modular_sub.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Interleaved_Modular_Multi' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Interleaved_Modular_Multi.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Interleaved_Modular_Multi' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Interleaved_Modular_Multi.v:4]
 INFO: [Synth 8-6157] synthesizing module 'mod_p_ed25519_seq' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/mod_p_seq.sv:1]
-INFO: [Synth 8-226] default block is never used [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/mod_p_seq.sv:25]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/mod_p_seq.sv:50]
 INFO: [Synth 8-6155] done synthesizing module 'mod_p_ed25519_seq' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/mod_p_seq.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'ramY_2' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/ramY_2.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'ramY_2' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/ramY_2.v:1]
@@ -74,11 +72,8 @@ INFO: [Synth 8-6155] done synthesizing module 'Shift_mod' (0#1) [/home/bowang130
 INFO: [Synth 8-6157] synthesizing module 'CSA__parameterized0' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/CSA.v:23]
 	Parameter WIDTH bound to: 260 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'CSA__parameterized0' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/CSA.v:23]
-INFO: [Synth 8-6157] synthesizing module 'REG' [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/REG.v:23]
-	Parameter WIDTH bound to: 260 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'REG' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/REG.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Interleaved_Modular_Multi.v:203]
-INFO: [Synth 8-6155] done synthesizing module 'Interleaved_Modular_Multi' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Interleaved_Modular_Multi.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Interleaved_Modular_Multi.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'Interleaved_Modular_Multi' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/Interleaved_Modular_Multi.v:4]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/alu.v:89]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/alu.v:83]
 INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.srcs/sources_1/new/alu.v:23]
@@ -109,27 +104,27 @@ WARNING: [Synth 8-7129] Port in[257] in module Shift_mod is either unconnected o
 WARNING: [Synth 8-7129] Port in[256] in module Shift_mod is either unconnected or has no load
 WARNING: [Synth 8-7129] Port in[255] in module Shift_mod is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2581.465 ; gain = 477.676 ; free physical = 3036 ; free virtual = 18237
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2581.469 ; gain = 477.676 ; free physical = 162 ; free virtual = 16727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2596.309 ; gain = 492.520 ; free physical = 3036 ; free virtual = 18237
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2596.312 ; gain = 492.520 ; free physical = 169 ; free virtual = 16734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7a100tcsg324-2L
-INFO: [Device 21-403] Loading part xc7a100tcsg324-2L
+Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2604.312 ; gain = 500.523 ; free physical = 3036 ; free virtual = 18237
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2604.316 ; gain = 500.523 ; free physical = 168 ; free virtual = 16733
 ---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2604.312 ; gain = 500.523 ; free physical = 3032 ; free virtual = 18235
+Finished Doing Graph Differ : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2613.223 ; gain = 509.430 ; free physical = 172 ; free virtual = 16738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2604.312 ; gain = 500.523 ; free physical = 3032 ; free virtual = 18235
+Finished Preparing Guide Design : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2613.223 ; gain = 509.430 ; free physical = 172 ; free virtual = 16738
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Scalar_multi_SM'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ECPA_SM'
@@ -212,10 +207,9 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                               00
-                    LOAD |                             0010 |                               01
-                 MUL_ACC |                             0100 |                               10
-                  REDUCE |                             1000 |                               11
+                    IDLE |                              001 |                               00
+                    CALC |                              010 |                               01
+                  REDUCE |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mod_p_ed25519_seq'
 ---------------------------------------------------------------------------------------------------
@@ -250,7 +244,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'point_multi_core'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2697.992 ; gain = 594.203 ; free physical = 2933 ; free virtual = 18135
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2640.215 ; gain = 536.422 ; free physical = 227 ; free virtual = 16683
 ---------------------------------------------------------------------------------
 
 
@@ -268,15 +262,15 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input  262 Bit       Adders := 12    
+	   4 Input  261 Bit       Adders := 6     
 	   2 Input  260 Bit       Adders := 3     
-	   2 Input  257 Bit       Adders := 1     
+	   2 Input  257 Bit       Adders := 7     
 	   3 Input  257 Bit       Adders := 2     
 	   2 Input  256 Bit       Adders := 1     
 	   2 Input  255 Bit       Adders := 12    
 	   2 Input   32 Bit       Adders := 3     
 	   2 Input    9 Bit       Adders := 1     
-	   2 Input    8 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 3     
 	   2 Input    7 Bit       Adders := 1     
 	   2 Input    4 Bit       Adders := 3     
 	   2 Input    3 Bit       Adders := 3     
@@ -284,57 +278,56 @@ Detailed RTL Component Info :
 	   3 Input    260 Bit         XORs := 6     
 	   3 Input    256 Bit         XORs := 3     
 +---Registers : 
-	              262 Bit    Registers := 12    
+	              512 Bit    Registers := 3     
+	              261 Bit    Registers := 6     
 	              260 Bit    Registers := 6     
-	              259 Bit    Registers := 3     
+	              257 Bit    Registers := 6     
 	              256 Bit    Registers := 70    
 	              255 Bit    Registers := 12    
 	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
 	                5 Bit    Registers := 8     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 41    
 +---Multipliers : 
-	              5x262  Multipliers := 6     
 	              3x256  Multipliers := 3     
 	               2x32  Multipliers := 3     
 +---RAMs : 
 	               2K Bit	(8 X 256 bit)          RAMs := 3     
 +---Muxes : 
-	   4 Input  262 Bit        Muxes := 6     
 	   2 Input  260 Bit        Muxes := 18    
+	   2 Input  257 Bit        Muxes := 6     
 	   2 Input  256 Bit        Muxes := 18    
 	   4 Input  256 Bit        Muxes := 2     
 	  10 Input  256 Bit        Muxes := 8     
 	   7 Input  256 Bit        Muxes := 2     
-	   4 Input  255 Bit        Muxes := 6     
-	   2 Input  255 Bit        Muxes := 6     
+	   2 Input  255 Bit        Muxes := 12    
 	  10 Input   10 Bit        Muxes := 1     
 	   2 Input   10 Bit        Muxes := 2     
 	  10 Input    9 Bit        Muxes := 1     
-	   5 Input    8 Bit        Muxes := 6     
+	   5 Input    8 Bit        Muxes := 3     
 	   2 Input    7 Bit        Muxes := 3     
 	  25 Input    5 Bit        Muxes := 3     
 	  24 Input    5 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 5     
 	  21 Input    5 Bit        Muxes := 3     
 	  20 Input    5 Bit        Muxes := 1     
-	   4 Input    4 Bit        Muxes := 6     
-	   2 Input    4 Bit        Muxes := 12    
+	   3 Input    3 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 7     
 	   5 Input    3 Bit        Muxes := 3     
 	  25 Input    3 Bit        Muxes := 1     
 	  21 Input    3 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 1     
 	   7 Input    3 Bit        Muxes := 1     
 	   3 Input    2 Bit        Muxes := 1     
 	   4 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 2     
 	  25 Input    2 Bit        Muxes := 1     
 	  21 Input    2 Bit        Muxes := 1     
-	   4 Input    1 Bit        Muxes := 27    
-	   2 Input    1 Bit        Muxes := 66    
+	   3 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 78    
 	   5 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 9     
 	  25 Input    1 Bit        Muxes := 4     
 	  21 Input    1 Bit        Muxes := 4     
 	  18 Input    1 Bit        Muxes := 4     
@@ -348,8 +341,8 @@ Finished RTL Component Statistics
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
 Part Resources:
-DSPs: 240 (col length:80)
-BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
@@ -665,7 +658,7 @@ INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instan
 INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:17 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 145 ; free virtual = 10065
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:01:39 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 212 ; free virtual = 8246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -695,7 +688,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:01:20 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 143 ; free virtual = 10078
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:43 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 181 ; free virtual = 8240
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -707,6 +700,7 @@ Distributed RAM: Final Mapping Report
 +-----------------+------------+-----------+----------------------+--------------+
 |point_multi_core | mem_reg    | Implied   | 8 x 255              | RAM32M x 43  | 
 |point_multi_core | mem_reg    | Implied   | 8 x 255              | RAM32M x 43  | 
+|point_multi_core | mem_reg    | Implied   | 8 x 255              | RAM32M x 43  | 
 +-----------------+------------+-----------+----------------------+--------------+
 
 ---------------------------------------------------------------------------------
@@ -716,8 +710,109 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/u_mod_p/FSM_onehot_state_reg[2]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/u_mod_p/FSM_onehot_state_reg[1]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/u_mod_p/FSM_onehot_state_reg[0]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mod_p/FSM_onehot_state_reg[2]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mod_p/FSM_onehot_state_reg[1]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mod_p/FSM_onehot_state_reg[0]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[16]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[15]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[14]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[13]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[12]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[11]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[10]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[9]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[8]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[7]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[6]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[5]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[4]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[3]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[2]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[1]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[0]) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[16]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[15]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[14]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[13]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[12]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[11]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[10]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[9]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[8]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[7]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[6]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[5]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[4]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[3]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[2]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[1]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[0]__0) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[20]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[19]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[18]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[17]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[16]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[15]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[14]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[13]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[12]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[11]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[10]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[9]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[8]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[7]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[6]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[5]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[4]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[3]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[2]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[1]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[0]__1) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[16]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[15]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[14]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[13]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[12]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[11]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[10]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[9]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[8]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[7]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[6]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[5]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[4]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[3]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[2]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[1]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[0]__2) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[16]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[15]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[14]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[13]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[12]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[11]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[10]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[9]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[8]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[7]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[6]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[5]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[4]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[3]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[2]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[1]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[0]__3) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[16]__4) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[15]__4) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[14]__4) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[13]__4) is unused and will be removed from module point_multi_core.
+WARNING: [Synth 8-3332] Sequential element (alu_unit/alu_core/mod_mul/ramY/mult_result_reg[12]__4) is unused and will be removed from module point_multi_core.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:01:24 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 137 ; free virtual = 10077
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:01:48 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 155 ; free virtual = 8221
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -735,37 +830,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:01:33 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 146 ; free virtual = 9890
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:01:54 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 215 ; free virtual = 8234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:01:33 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 146 ; free virtual = 9890
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:01:54 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 215 ; free virtual = 8234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:01:34 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 138 ; free virtual = 9883
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:01:55 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 215 ; free virtual = 8234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:01:34 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 138 ; free virtual = 9883
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:01:55 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 215 ; free virtual = 8234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:01:35 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 131 ; free virtual = 9878
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:01:56 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 157 ; free virtual = 8297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:01:35 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 131 ; free virtual = 9878
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:56 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 153 ; free virtual = 8298
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -782,19 +877,19 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |  2872|
-|3     |LUT1   |   330|
-|4     |LUT2   |  8830|
-|5     |LUT3   |  1774|
-|6     |LUT4   |  3092|
-|7     |LUT5   |   865|
-|8     |LUT6   |  2988|
-|9     |MUXF7  |    94|
-|10    |MUXF8  |    36|
-|11    |RAM32M |    86|
-|12    |FDCE   |  7058|
-|13    |FDPE   |    35|
-|14    |FDRE   |  3482|
+|2     |CARRY4 |  1170|
+|3     |LUT1   |   133|
+|4     |LUT2   |  2484|
+|5     |LUT3   |  1921|
+|6     |LUT4   |   943|
+|7     |LUT5   |   698|
+|8     |LUT6   |  2152|
+|9     |MUXF7  |    64|
+|10    |MUXF8  |    26|
+|11    |RAM32M |    43|
+|12    |FDCE   |  4163|
+|13    |FDPE   |    24|
+|14    |FDRE   |   849|
 |15    |IBUF   |   771|
 |16    |OBUF   |   513|
 +------+-------+------+
@@ -803,50 +898,43 @@ Report Instance Areas:
 +------+---------------+----------------------------+------+
 |      |Instance       |Module                      |Cells |
 +------+---------------+----------------------------+------+
-|1     |top            |                            | 32827|
+|1     |top            |                            | 15955|
 |2     |  SMSM         |Scalar_multi_SM             |   418|
-|3     |  inv_unit     |invert                      | 16342|
-|4     |    multiplier |Interleaved_Modular_Multi_2 | 12718|
-|5     |      ramY     |ramY_2_3                    |  6949|
-|6     |        mod_p  |mod_p_ed25519_seq_7         |  4473|
-|7     |      regC     |REG_4                       |  1384|
-|8     |      regS     |REG_5                       |   262|
-|9     |      u_mod_p  |mod_p_ed25519_seq_6         |  3801|
-|10    |  multi_unit   |Interleaved_Modular_Multi   | 12717|
-|11    |    ramY       |ramY_2                      |  6953|
-|12    |      mod_p    |mod_p_ed25519_seq_1         |  4475|
-|13    |    regC       |REG                         |  1384|
-|14    |    regS       |REG_0                       |   262|
-|15    |    u_mod_p    |mod_p_ed25519_seq           |  3801|
+|3     |  inv_unit     |invert                      |    93|
+|4     |    multiplier |Interleaved_Modular_Multi_1 |    65|
+|5     |      ramY     |ramY_2_2                    |    24|
+|6     |        mod_p  |mod_p_ed25519_seq_4         |    13|
+|7     |      u_mod_p  |mod_p_ed25519_seq_3         |     7|
+|8     |  multi_unit   |Interleaved_Modular_Multi   | 12096|
+|9     |    ramY       |ramY_2                      |  7158|
+|10    |      mod_p    |mod_p_ed25519_seq_0         |  4174|
+|11    |    u_mod_p    |mod_p_ed25519_seq           |  4113|
 +------+---------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:01:35 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 131 ; free virtual = 9878
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:56 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 149 ; free virtual = 8298
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 538 critical warnings and 16 warnings.
-terminate called after throwing an instance of 'boost::interprocess::interprocess_exception'
-  what():  Bad file descriptor
-/tools/Xilinx/Vivado/2023.1/bin/rdiArgs.sh: line 352: 14441 Aborted                 (core dumped) "$RDI_PROG" "$@"
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:43 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 5526 ; free virtual = 17893
-Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:01:43 . Memory (MB): peak = 2877.488 ; gain = 773.699 ; free physical = 5525 ; free virtual = 17890
+Synthesis finished with 0 errors, 538 critical warnings and 633 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:02:09 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 5423 ; free virtual = 16782
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:02:09 . Memory (MB): peak = 2885.211 ; gain = 781.418 ; free physical = 5423 ; free virtual = 16780
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2877.488 ; gain = 0.000 ; free physical = 5509 ; free virtual = 17890
-INFO: [Netlist 29-17] Analyzing 3088 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2885.211 ; gain = 0.000 ; free physical = 5274 ; free virtual = 16682
+INFO: [Netlist 29-17] Analyzing 1303 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2976.660 ; gain = 0.000 ; free physical = 5408 ; free virtual = 17865
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2959.133 ; gain = 0.000 ; free physical = 5208 ; free virtual = 16645
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 86 instances were transformed.
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 86 instances
+  A total of 43 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 43 instances
 
-Synth Design complete | Checksum: f3c687f2
+Synth Design complete | Checksum: d1be83ac
 INFO: [Common 17-83] Releasing license: Synthesis
-187 Infos, 16 Warnings, 200 Critical Warnings and 0 Errors encountered.
+186 Infos, 114 Warnings, 200 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:52 . Memory (MB): peak = 2976.660 ; gain = 881.777 ; free physical = 5329 ; free virtual = 17807
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 6452.731; main = 2112.431; forked = 5993.244
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 15474.047; main = 2976.664; forked = 12600.469
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:02:16 . Memory (MB): peak = 2959.133 ; gain = 864.246 ; free physical = 5153 ; free virtual = 16611
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 6210.220; main = 1948.617; forked = 6099.117
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 15557.152; main = 2959.137; forked = 12675.852
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint '/home/bowang1308/Documents/Ed25519_DBQ/Ed25519_DBQ.runs/synth_1/point_multi_core.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file point_multi_core_utilization_synth.rpt -pb point_multi_core_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Aug  1 11:28:12 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  5 16:45:03 2025...

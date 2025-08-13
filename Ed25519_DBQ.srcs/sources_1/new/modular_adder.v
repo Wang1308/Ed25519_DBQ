@@ -25,7 +25,7 @@ module modular_adder #(parameter WIDTH = 256)(
 
     // ----- CSA: A + B + (-P) -----
     wire [WIDTH-1:0] csa_sum;
-    wire [WIDTH:0]   csa_carry;
+    wire [WIDTH-1:0] csa_carry;
 
     CSA #(WIDTH) u_csa (
         .in1(A),

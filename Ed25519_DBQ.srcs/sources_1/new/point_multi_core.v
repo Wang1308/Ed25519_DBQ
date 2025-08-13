@@ -61,7 +61,7 @@ module point_multi_core #(
         .k(k),
         .px(px),
         .py(py),
-        .pz(1),
+        .pz(256'h1),
         .pt(pt),
         .done(SMSM_done),
         .rst_alu(rst_alu),
